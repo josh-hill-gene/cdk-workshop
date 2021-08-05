@@ -27,7 +27,7 @@ export class CdkWorkshopStack extends cdk.Stack {
     });
 
     const tv = new TableViewer(this, 'ViewHitCounter', {
-      title: 'Hello Hits',
+      title: 'Hello Friend!',
       table: helloWithCounter.table,
       sortBy: 'path'
     });
