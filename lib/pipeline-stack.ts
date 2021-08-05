@@ -21,7 +21,8 @@ export class WorkshopPipelineStack extends cdk.Stack {
             sourceAction: new codepipline_actions.CodeCommitSourceAction({
                 actionName: 'CodeCommit',
                 output: sourceArtifact,
-                repository: repo
+                repository: repo,
+                branch: 'main'
             }),
             synthAction: SimpleSynthAction.standardNpmSynth({
                 sourceArtifact,
